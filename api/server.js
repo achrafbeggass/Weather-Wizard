@@ -73,7 +73,7 @@ app.get("/api/detect-location", async (req, res) => {
       cityId:
         cities.find(
           (c) => c.name.toLowerCase() === response.data.city.toLowerCase()
-        )?.id || null,
+        ).id || null,
     };
 
     res.json(locationData);
